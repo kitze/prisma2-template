@@ -1,8 +1,8 @@
+require("dotenv").config();
 import { Photon } from "@generated/photon";
 import { GraphQLServer } from "graphql-yoga";
-import { permissions } from "./permissions";
+import { permissions } from "./shield/permissions";
 import { schema } from "./schema";
-
 const photon = new Photon();
 
 const server = new GraphQLServer({

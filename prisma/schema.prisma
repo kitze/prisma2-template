@@ -8,17 +8,7 @@ generator nexus_prisma {
 
 datasource db {
   provider = "sqlite"
-  url      = "file:dev.db"
-}
-
-model Post {
-  id        String   @default(cuid()) @id
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-  published Boolean  @default(true)
-  title     String
-  content   String?
-  author    User?
+  url      = "file:prisma/dev.db"
 }
 
 model User {
@@ -26,7 +16,4 @@ model User {
   email    String  @unique
   password String
   name     String?
-  posts    Post[]
-  surname String?
-  nickname String?
 }

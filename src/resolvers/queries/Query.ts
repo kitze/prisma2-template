@@ -1,5 +1,4 @@
-import { idArg, queryType, stringArg } from "nexus";
-import { getUserId } from "graphql-user";
+import { queryType } from "nexus";
 import { ObjectDefinitionBlock } from "nexus/dist/definitions/objectType";
 
 //queries
