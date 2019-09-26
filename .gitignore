@@ -21,4 +21,4 @@ dist
 /screenshots/
 
 generated
-prisma/dev.db
+prisma/migrations

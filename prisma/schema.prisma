@@ -6,9 +6,9 @@ generator nexus_prisma {
   provider = "nexus-prisma"
 }
 
-datasource db {
-  provider = "sqlite"
-  url      = "file:prisma/dev.db"
+datasource pg {
+  provider = "postgresql"
+  url      = env("POSTGRESQL_URL")
 }
 
 model User {
