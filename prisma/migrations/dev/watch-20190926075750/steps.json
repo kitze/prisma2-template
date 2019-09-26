@@ -1,0 +1,15 @@
+{
+  "version": "0.2.55",
+  "steps": [
+    {
+      "stepType": "CreateField",
+      "model": "User",
+      "name": "nickname",
+      "type": {
+        "Base": "String"
+      },
+      "arity": "optional",
+      "isUnique": false
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "prisma2-starter",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node-dev --no-notify --respawn --transpileOnly ./src",
+    "seed": "ts-node prisma/seed.ts",
+    "postinstall": "yarn generate",
+    "generate": "prisma2 generate"
+  },
+  "dependencies": {
+    "graphql-shield": "5.7.3",
+    "graphql-user": "^0.1.6",
+    "graphql-yoga": "1.18.3",
+    "nexus": "0.12.0-beta.9"
+  },
+  "devDependencies": {
+    "@types/node": "12.7.8",
+    "prettier": "^1.18.2",
+    "prisma2": "2.0.0-preview-12",
+    "ts-node": "8.4.1",
+    "ts-node-dev": "1.0.0-pre.43",
+    "typescript": "3.6.3"
+  }
+}
